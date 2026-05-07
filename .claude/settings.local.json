@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:5173/)",
+      "Bash(curl -s \"http://localhost:5173/src/main.tsx?t=1777553159403\")",
+      "Bash(curl -s \"http://localhost:5173/src/App.tsx?t=1777553159403\")",
+      "Bash(curl -s \"http://localhost:5173/src/components/HearingForm.tsx?t=1777553157493\")",
+      "Bash(curl -s \"http://localhost:5173/src/types/travel.ts\")",
+      "Bash(taskkill /F /IM node.exe)",
+      "PowerShell(Get-Process node -ErrorAction SilentlyContinue)",
+      "PowerShell(Stop-Process -Force)",
+      "Bash(curl -s http://localhost:5173/src/App.tsx)",
+      "Bash(node -e \"const p = require\\('./node_modules/react/package.json'\\); console.log\\('React:', p.version\\)\")",
+      "Bash(node -e \"const p = require\\('./node_modules/@vitejs/plugin-react/package.json'\\); console.log\\('plugin-react:', p.version\\)\")"
+    ]
+  }
+}
