@@ -5,6 +5,7 @@ import TravelDetails from './components/TravelDetails';
 import ItineraryView from './components/ItineraryView';
 import { generateItineraryDraft } from './services/itineraryGenerator';
 import { parseShareHash } from './utils/share';
+import logoImg from './assets/logo.jpg';
 import './App.css';
 
 type Step = 1 | 2 | 3;
@@ -94,8 +95,8 @@ export default function App() {
       <header className="app-header no-print">
         <div className="header-inner">
           <div className="header-brand">
-            <span className="header-logo">✈️</span>
-            <span className="header-title">旅のしおりメーカー</span>
+            <img src={logoImg} alt="Route" className="header-logo-img" />
+            <span className="header-title">Route</span>
           </div>
           <nav className="step-indicator" aria-label="進捗">
             {STEPS.map((label, i) => {
